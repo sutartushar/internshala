@@ -88,7 +88,6 @@ export default function App() {
               >
                 <BsFilter size={18} />
                 Filters
-                {hasActiveFilters && <span className={styles.filterDot} />}
               </button>
             </div>
           </div>

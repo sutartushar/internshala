@@ -6,14 +6,6 @@ import { BsBriefcase, BsGeoAlt, BsClock, BsCurrencyRupee, BsChevronDown } from '
 export default function FilterPanel({ filters, onChange, options, onClear }) {
   return (
     <aside className={styles.panel} aria-label="Filter internships">
-      <div className={styles.header}>
-        <h2 className={styles.title}>Filters</h2>
-        {hasActiveFilters(filters) && (
-          <button className={styles.clearAll} onClick={onClear} aria-label="Clear all filters">
-            Clear all
-          </button>
-        )}
-      </div>
 
       <FilterSection
         title="Profile"
